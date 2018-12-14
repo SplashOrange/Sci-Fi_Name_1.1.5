@@ -17,9 +17,9 @@ public class SciFiName
      */
     public static void main()
     {
-        System.out.println("If you provide me some information I will provide a Science Fiction name for you.");
-        System.out.println("Please have all responses  be at least three characters long.");
-        System.out.println("For best results, user lowercase letters with no spaces.\n");
+        System.out.println("If you provide me with some information, I will provide a Science Fiction name for you.");
+        System.out.println("Please have all responses be at least three characters long.");
+        System.out.println("For best results, user lowercase letters with no spaces.");
 
         // notice this methd (print) does not print a newline
         System.out.print("Enter your first name: ");
@@ -28,7 +28,7 @@ public class SciFiName
         String lastName = UserInput.getString();
         System.out.print("Enter the city where you or one of your parents were born: ");
         String city = UserInput.getString();
-        System.out.print("Enter the name of your grammar school: ");
+        System.out.print("Enter the name of your elementary school: ");
         String school = UserInput.getString();
         System.out.print("Enter the first name of a sibling or other relative: ");
         String relativeName1 = UserInput.getString();
@@ -37,6 +37,7 @@ public class SciFiName
 
         // generate a sciFi name
    
+        System.out.println(firstName.substring(0,3) + lastName.substring(0,2));
         
     }
 }
