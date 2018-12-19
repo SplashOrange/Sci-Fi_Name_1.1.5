@@ -37,7 +37,6 @@ public class SciFiName
 
         // generate a sciFi name
    
-        System.out.println(firstName.substring(0,3) + lastName.substring(0,2));
-        
+        System.out.println("Your sci-fi name is " + (firstName.substring(0,3) + lastName.substring(0,2) + (" ") + city.substring(0,2) + school.substring(0,3)));
     }
 }
