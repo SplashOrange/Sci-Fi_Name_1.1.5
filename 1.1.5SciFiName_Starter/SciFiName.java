@@ -1,3 +1,4 @@
+import java.util.Random;
 
 /**
  * SciFiName gathers input from a user to generate a custom name that
@@ -15,6 +16,7 @@ public class SciFiName
      * 
      * For best results, user lowercase letters and do not use spaces in your input
      */
+
     public static void main()
     {
         System.out.println("If you provide me with some information, I will provide a Science Fiction name for you.");
@@ -35,8 +37,16 @@ public class SciFiName
         System.out.print("Enter the first name of a second sibling or relative: ");
         String relativeName2 = UserInput.getString();
 
+
+        int n = relativeName1.length();
+
+        Random rand = new Random();
+
+        int r = rand.nextInt(n) + 1;
+
         // generate a sciFi name
    
         System.out.println("Your sci-fi name is " + (firstName.substring(0,3) + lastName.substring(0,2) + (" ") + city.substring(0,2) + school.substring(0,3)));
+        System.out.println("Your Sci-fi place of origin is " + r);
     }
 }
