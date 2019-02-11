@@ -41,7 +41,7 @@ public class SciFiName
         int n = relativeName1.length();
 
         Random rand = new Random();
-
+        
         int r = rand.nextInt(n) + 1;
 
         // generate a sciFi name
