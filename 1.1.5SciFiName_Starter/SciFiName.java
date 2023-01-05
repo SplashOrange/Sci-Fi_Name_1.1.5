@@ -13,7 +13,6 @@ public class SciFiName
     /**
      * All input that you provide should be at least three letters long
      * or the program may crash (but feel free to test this!)
-     * 
      * For best results, user lowercase letters and do not use spaces in your input
      */
 
@@ -23,7 +22,7 @@ public class SciFiName
         System.out.println("Please have all responses be at least three characters long.");
         System.out.println("For best results, user lowercase letters with no spaces.");
 
-        // notice this methd (print) does not print a newline
+        // notice this method (print) does not print a newline
         System.out.print("Enter your first name: ");
         String firstName = UserInput.getString();
         System.out.print("Enter your last name: ");
